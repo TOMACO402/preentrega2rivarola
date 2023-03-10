@@ -14,6 +14,9 @@ const Navbar = () => {
                         <div className="col d-flex align-items-center justify-content-end me-5">
                               <CartWidget/>
                             </div>
+                            <div className="col-1 d-flex align-items-center justify-content-end me-5">
+                            <Link className="navbar-brand" to={"/CartDetail"}><CartWidget/></Link>    
+                            </div>
                         <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span className="navbar-toggler-icon"></span>
                         </button>
@@ -40,10 +43,10 @@ const Navbar = () => {
                                 <NavLink className="nav-link" activeclassname={"active"} to={"/category/skateysurf"}>Skate & Surf</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" activeclassname={"active"} to={"/politicas"}>Políticas de Compra y Devolución</NavLink>
+                                <NavLink className="nav-link" activeclassname={"active"} to={"/Politicas"}>Políticas de Compra y Devolución</NavLink>
                             </li>
                             <li className="nav-item">
-                                <NavLink className="nav-link" activeclassname={"active"} to={"/sobrenosotros"}>Sobre Nosotros</NavLink>
+                                <NavLink className="nav-link" activeclassname={"active"} to={"/Quienes"}>Quienes Somos</NavLink>
                             </li>
                             <form className="d-flex mt-3" role="search">
                             <input className="form-control me-2" type="search" placeholder="Buscar" aria-label="Search"></input>

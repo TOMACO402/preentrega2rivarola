@@ -2,7 +2,8 @@ import facebook from "/xampp2/htdocs/preentrega2rivarola/src/images/facebook.svg
 import instagram from "/xampp2/htdocs/preentrega2rivarola/src/images/instagram.svg";
 import twitter from "/xampp2/htdocs/preentrega2rivarola/src/images/twitter.svg";
 import youtube from "/xampp2/htdocs/preentrega2rivarola/src/images/youtube.svg";
-import logo2 from "/xampp2/htdocs/preentrega2rivarola/src/images/logo2.png"
+import logo2 from "/xampp2/htdocs/preentrega2rivarola/src/images/logo2.png";
+import {NavLink } from "react-router-dom";
 
 const Footer = () => {
     return(
@@ -19,16 +20,16 @@ const Footer = () => {
                 <div className="col md-8">
                     <ul className="nav">
                             <li class="nav-item">
-                                <a className="nav-link text-secondary" href={"/"}>Politicas de privacidad</a>
+                            <NavLink className="nav-link text-secondary" activeclassname={"active"} to={"/Politicas"}>Politicas de compra y devolución</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary" href={"/"}>Sobre nosotros</a>
+                            <NavLink className="nav-link text-secondary" activeclassname={"active"} to={"/Quienes"}>Quienes Somos</NavLink>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary" href={"/"}>Defensa al consumidor</a>
+                                <a className="nav-link text-secondary" href={"https://www.argentina.gob.ar/produccion/defensadelconsumidor/hacer-un-reclamo"}>Defensa al consumidor</a>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link text-secondary" href={"/"}>Contacto</a>
+                            <a className="nav-link text-secondary" href={"/"}>Contacto</a>
                             </li>
                     </ul>
                 </div>
